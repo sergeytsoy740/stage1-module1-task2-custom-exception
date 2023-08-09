@@ -23,6 +23,7 @@ public class StudentManager {
             } else {
                 throw new NullPointerException();
             }
+
         } catch (NullPointerException e) {
             throw new IdNotExistsException("Could not find student with ID " + studentID);
         }
