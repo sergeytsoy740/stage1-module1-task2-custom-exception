@@ -24,7 +24,6 @@ public class StudentManager {
                 throw new NullPointerException();
             }
         } catch (NullPointerException e) {
-            //System.err.println(e.getMessage());
             throw new IdNotExistsException("Could not find student with ID " + studentID);
         }
     }
